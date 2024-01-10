@@ -435,7 +435,6 @@ article .icon {
   max-width: 500px;
   margin: 0 auto;
   text-align: left;
-
 }
 
 .exp-logo {
@@ -484,6 +483,7 @@ article .icon {
 
 .exp-skills-title {
   list-style-type: none;
+  gap: 0.5rem;
 }
 
 /* PROJECTS */
@@ -513,7 +513,7 @@ article .icon {
 }
 
 .project-description {
-  font-size:x-small;
+  font-size: small;
   color: gray;
   margin-bottom: 20px;
   line-height: 2;
