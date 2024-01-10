@@ -58,7 +58,7 @@ a:hover {
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .logo:hover {
@@ -379,7 +379,7 @@ article .icon {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 500px;
+  height: 100%;
   padding-bottom: 0;
 }
 
@@ -405,7 +405,7 @@ article .icon {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .dot {
@@ -434,7 +434,7 @@ article .icon {
 
 }
 
-.exp-logo {
+.logo {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -473,9 +473,8 @@ article .icon {
   color: black;
   display: flex;
   gap: 2rem;
-  margin-top: 15px;
+  margin-top: 10px;
   font-size: small;
-  position:relative;
 }
 
 .exp-skills-title {
