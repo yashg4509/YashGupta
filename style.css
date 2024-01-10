@@ -162,10 +162,11 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
+  /* height: 96vh; */
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
+  margin-bottom: 10rem;
 }
 
 .section-container {
@@ -218,6 +219,10 @@ section {
   justify-content: center;
   margin-top: 1rem;
   gap: 1rem;
+}
+
+.text-container {
+  line-height: 2;
 }
 
 /* ICONS */
@@ -493,7 +498,10 @@ article .icon {
 } */
 
 
+
+
 /* PROJECTS */
+
 #projects {
   position: relative;
 }
@@ -503,10 +511,25 @@ article .icon {
   background: rgb(250, 250, 250);
 }
 
+.about-containers {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  gap: 2rem;
+  justify-content: center; /* Center the projects */
+}
+
 .project-container {
   overflow: hidden;
-  height: 350px; /* Set the initial height for all project containers */
+  height: 400px; /* Adjusted height to prevent cutoff */
   transition: height 0.3s ease-in-out;
+  flex: 0 0 calc(33.333% - 20px); /* 3 items per row with 20px gap */
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+/* Make Knee project wider */
+.project-container:nth-child(5) {
+  flex: 0 0 calc(66.666% - 20px); /* 2 items per row with 20px gap */
 }
 
 .project-container:hover {
@@ -538,7 +561,7 @@ article .icon {
 .project-img {
   border-radius: 2rem;
   width: 90%;
-  height: 90%;
+  height: 70%; /* Adjusted height to prevent cutoff */
   transition: all 0.3s ease-in-out;
 }
 
@@ -559,6 +582,43 @@ article .icon {
   margin-bottom: 20px;
   line-height: 2;
 }
+
+/* Adjust the size of the image for the "Knee" project */
+.project-container:nth-child(5) .project-img {
+  width: 100px; /* Adjusted width for the "Knee" project */
+  height: 100px; /* Adjusted height for the "Knee" project */
+}
+
+/* MEDIA */
+#media {
+  position: relative;
+}
+
+.media-links-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.media-link {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.media-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.media-link:hover {
+  background-color: #d0d0d0;
+}
+
+
 
 /* CONTACT */
 #contact {

@@ -20,6 +20,7 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#media">Media</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -37,6 +38,7 @@
           <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#media">Media</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -437,8 +439,10 @@
               - Automated reengagement email outreach campaigns using SendGrid
               API and Python, leading to an increase in re engagement rates
             </p>
-            <p class="exp-skills"><strong>Skills: </strong>Python (JSON Processing), LLMs (LangChain, GPT-4), REST APIs</p>
-
+            <p class="exp-skills">
+              <strong>Skills: </strong>Python (JSON Processing), LLMs
+              (LangChain, GPT-4), REST APIs
+            </p>
           </div>
         </div>
         <div class="slide slide3">
@@ -459,7 +463,9 @@
               information on <strong>thousands</strong> of listings in large
               real estate aggregator sites such as Zillow
             </p>
-            <p class="exp-skills"><strong>Skills: </strong>Python, Web Scraping (Selenium)</p>
+            <p class="exp-skills">
+              <strong>Skills: </strong>Python, Web Scraping (Selenium)
+            </p>
             <!-- <ul class="exp-skills">
               <li class="exp-skills-title"><strong>Skills: </strong></li>
               <li>Python</li>
@@ -501,21 +507,42 @@
               presented work to National Institute of Health officials at local
               conference
             </p>
-            <p class="exp-skills"><strong>Skills: </strong>Java, HTML/CSS, AWS, Blockchain (Smart Contracts, Solidity, Ethereum)
-            <!-- <ul class="exp-skills">
-              <li class="exp-skills-title"><strong>Skills: </strong></li>
-              <li>Java</li>
-              <li>Solidity/Ethereum</li>
-              <li>HTML/CSS</li>
-              <li>AWS</li>
-              <li>Blockchain & Smart Contracts</li>
+            <p class="exp-skills">
+              <strong>Skills: </strong>Java, HTML/CSS, AWS, Blockchain (Smart
+              Contracts, Solidity, Ethereum)
+            </p>
+          </div>
+        </div>
 
-            </ul> -->
+        <div class="slide slide5">
+          <div class="card">
+            <img
+              class="exp-logo"
+              src="./assets/stanford.jpeg"
+              alt="logo"
+              onclick="window.open('https://med.stanford.edu/', '_blank')"
+            />
+            <h3 class="role">Research Intern</h3>
+            <h4 class="company">Stanford University School of Medicine</h4>
+            <p class="date">August 2021 - August 2022</p>
+            <p class="description">
+              - Created efficient data preprocessing and filtering algorithms to
+              process tens of thousands of clinical patient data points live
+              from Stanford’s hospital <br />
+              - Heading development on machine learning model to use clinical
+              event data to predict if a patient has hepatic encephalopathy
+              <br />
+            </p>
+            <p class="exp-skills">
+              <strong>Skills: </strong>ScikitLearn, Plotting (Matplotlib,
+              Seaborn), Data Analysis (Pandas, Python)
+            </p>
           </div>
         </div>
       </div>
       <div class="dots">
         <span class="dot active-dot"></span>
+        <span class="dot"></span>
         <span class="dot"></span>
         <span class="dot"></span>
         <span class="dot"></span>
@@ -528,7 +555,6 @@
         onclick="location.href='./#projects'"
       />
     </section>
-    <!-- TODO: Change the projects section with the hover feature -->
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
@@ -628,6 +654,60 @@
               </button>
             </div>
           </div>
+
+          <div class="details-container color-container project-container">
+            <div class="article-container">
+              <img src="./assets/layon.png" alt="Layon" class="project-img" />
+            </div>
+            <h2 class="skill-sub-title project-title">Layon</h2>
+            <p class="project-description">
+              Layon, a ReactJS web app, displays interactive U.S. layoff
+              statistics with a city breakdown as well as predicted layoff
+              trends. My contributions primarily included backend algorithm
+              development for data processing and leading the development of
+              time series forecasting model. It was recognized as 4th place and
+              Best Use of Google Cloud at MadData 2023.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://devpost.com/software/layon', '_blank')"
+              >
+                Check it out!
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container project-container">
+            <div class="article-container">
+              <img src="./assets/knee.jpeg" alt="Knee" class="project-img" />
+            </div>
+            <h2 class="skill-sub-title project-title">
+              Analyzing the Effectiveness of Novel Classification Techniques for
+              Detecting Knee Cartilage Damage
+            </h2>
+            <p class="project-description">
+              Designed machine learning models to detect knee cartilage ruptures
+              in knee cartilage MRI images early and counter osteoarthritis.
+              Created dataset with Python algorithms that filter, preprocessed,
+              and merged a combination of 1.2 million knee MRI images from
+              different sources. Utilized Tensorflow (Python) to develop and
+              deploy machine learning models on dataset. Developed precise
+              accuracy metrics to compare effectiveness of different machine
+              learning models to find the most optimal model using SciKit Learn.
+              Recognized as 1st place in San Diego Greater Science and
+              Engineering Fair and qualifier to California State Fair. First
+              author on pending publication
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://drive.google.com/file/d/1ZiNSYXRMGdg6gt5SGVi1jZgwPPEB-GJT/view', '_blank')"
+              >
+                Check it out!
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -635,9 +715,48 @@
         src="./assets/arrow.png"
         alt="arrow icon"
         class="icon arrow"
-        onclick="location.href='./#projects'"
+        onclick="location.href='./#media'"
       />
     </section>
+
+    <section id="media">
+      <p class="section__text__p1">Check Me Out</p>
+      <h1 class="title">Media</h1>
+  
+      <div id="media-container" class="media-links-container">
+          <!-- Media links will be dynamically added here -->
+      </div>
+  
+      <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  
+    <!-- <section id="media">
+      <p class="section__text__p1">Check Me Out</p>
+      <h1 class="title">Media</h1>
+  
+      <div class="media-links-container">
+          <div class="media-link">
+              <h2>Publication</h2>
+              <p>Blockchain-enabled immutable, distributed, and highly available clinical research activity logging system for federated COVID-19 data analysis from multiple institutions:</p>
+              <a href="https://academic.oup.com/jamia/article/30/6/1167/7077141" target="_blank">Read more</a>
+          </div>
+  
+          <div class="media-link">
+              <h2>Udemy Course</h2>
+              <p>Artificial Intelligence in Bioinformatics:</p>
+              <a href="https://www.classcentral.com/course/udemy-helyxaiinbiomicrocourse-88752" target="_blank">Explore course</a>
+          </div>
+  
+          <div class="media-link">
+              <h2>News Article</h2>
+              <p>Canyon Crest students host hackathon:</p>
+              <a href="https://www.delmartimes.net/news/story/2020-03-30/canyon-crest-students-host-hackathon" target="_blank">Read article</a>
+          </div>
+      </div>
+  
+      <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section> -->
+  
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
