@@ -518,3 +518,37 @@ article .icon {
   margin-bottom: 20px;
   line-height: 2;
 }
+
+
+.project-container {
+  overflow: hidden;
+}
+
+
+.project-container .project-title,
+.project-container .project-img {
+  transition: all 0.3s ease-in-out;
+}
+
+.project-container:hover .project-title {
+  margin-top: 0.5rem; /* Adjust the margin as needed */
+}
+
+.project-container:hover .project-img {
+  height: 70%; /* Adjust the height as needed */
+}
+
+.project-description,
+.btn-container {
+  display: none;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-container:hover .project-description,
+.project-container:hover .btn-container {
+  display: block;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
