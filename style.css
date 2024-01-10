@@ -234,7 +234,7 @@ section {
 
 /* BUTTONS */
 
-.btn-container {
+.profile-btn-container {
   display: flex;
   justify-content: center;
   gap: 1rem;
