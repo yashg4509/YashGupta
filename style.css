@@ -27,6 +27,8 @@ a,
   transition: all 300ms ease;
 }
 
+
+
 /* NAVIGATION */
 nav,
 .nav-links {
@@ -527,6 +529,20 @@ article .icon {
   box-sizing: border-box;
 }
 
+
+/* Make project containers responsive for smaller screens */
+@media screen and (max-width: 1200px) {
+  .project-container {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project-container {
+    flex: 0 0 calc(100% - 20px);
+  }
+}
+
 /* Make Knee project wider */
 .project-container:nth-child(5) {
   flex: 0 0 calc(66.666% - 20px); /* 2 items per row with 20px gap */
@@ -558,11 +574,20 @@ article .icon {
   transition: all 0.3s ease-in-out;
 }
 
+
 .project-img {
   border-radius: 2rem;
   width: 90%;
   height: 70%; /* Adjusted height to prevent cutoff */
   transition: all 0.3s ease-in-out;
+}
+
+
+/* Make project images responsive for smaller screens */
+@media screen and (max-width: 600px) {
+  .project-img {
+    height: auto;
+  }
 }
 
 .project-title {
@@ -588,6 +613,14 @@ article .icon {
   width: 100px; /* Adjusted width for the "Knee" project */
   height: 100px; /* Adjusted height for the "Knee" project */
 }
+
+/* Make the "Knee" project wider on smaller screens */
+@media screen and (max-width: 600px) {
+  .project-container:nth-child(5) {
+    flex: 0 0 calc(100% - 20px);
+  }
+}
+
 
 /* MEDIA */
 #media {
