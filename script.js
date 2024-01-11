@@ -68,4 +68,6 @@ function generateMediaLinks() {
 // Call the function to generate media links
 generateMediaLinks();
 
-
+function toggleProject(project) {
+    project.classList.toggle('expanded');
+  }

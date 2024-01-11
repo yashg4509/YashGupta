@@ -7,7 +7,7 @@
     <title>Yash Gupta</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
@@ -561,7 +561,10 @@
       <h1 class="title">Projects</h1>
       <div class="skills-details-container">
         <div class="about-containers">
-          <div class="details-container color-container project-container">
+          <div
+            class="details-container color-container project-container"
+            onclick="toggleProject(this)"
+          >
             <div class="article-container">
               <img
                 src="./assets/enrollbadge.png"
@@ -593,7 +596,10 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container project-container">
+          <div
+            class="details-container color-container project-container"
+            onclick="toggleProject(this)"
+          >
             <div class="article-container">
               <img
                 src="./assets/DragonLearnLogo.png"
@@ -627,7 +633,10 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container project-container">
+          <div
+            class="details-container color-container project-container"
+            onclick="toggleProject(this)"
+          >
             <div class="article-container">
               <img
                 src="./assets/buckycourses.png"
@@ -656,7 +665,10 @@
             </div>
           </div>
 
-          <div class="details-container color-container project-container">
+          <div
+            class="details-container color-container project-container"
+            onclick="toggleProject(this)"
+          >
             <div class="article-container">
               <img src="./assets/layon.png" alt="Layon" class="project-img" />
             </div>
@@ -679,7 +691,10 @@
             </div>
           </div>
 
-          <div class="details-container color-container project-container">
+          <div
+            class="details-container color-container project-container"
+            onclick="toggleProject(this)"
+          >
             <div class="article-container">
               <img src="./assets/knee.jpeg" alt="Knee" class="project-img" />
             </div>
@@ -723,14 +738,19 @@
     <section id="media">
       <p class="section__text__p1">Check Me Out</p>
       <h1 class="title">Media</h1>
-  
+
       <div id="media-container" class="media-links-container">
-          <!-- Media links will be dynamically added here -->
+        <!-- Media links will be dynamically added here -->
       </div>
-  
-      <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-  </section>
-  
+
+      <img
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -744,7 +764,7 @@
           <p><a href="mailto:ysgupta@wisc.edu">ysgupta@wisc.edu</a></p>
         </div>
 
-        <div class="contact-info-container">
+        <div class="contact-info-container email-container">
           <img
             src="./assets/linkedin.png"
             alt="Linkedin icon"

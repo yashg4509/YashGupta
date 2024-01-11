@@ -407,6 +407,27 @@ article .icon {
   transition: opacity 0.5s ease; /* Smooth transition */
 }
 
+/* Add a media query to adjust styles for smaller screens if needed */
+@media screen and (max-width: 600px) {
+  .carousel {
+    flex-direction: column; /* Stack slides vertically on small screens */
+    overflow-x: hidden;
+    overflow-y: scroll; /* Enable vertical scrolling if needed */
+    white-space: normal; /* Allow text to wrap */
+  }
+
+  .slide {
+    flex: 0 0 100%;
+  }
+
+    /* Add additional padding for smaller screens */
+    .slide .card {
+      max-width: 90%;
+      /* padding-right: 10px; Adjust the padding as needed */
+    }
+
+}
+
 .slide.active {
   display: block;
   opacity: 1;
@@ -574,6 +595,27 @@ article .icon {
   transition: all 0.3s ease-in-out;
 }
 
+/* For mobile devices, keep the expanded state on click */
+@media screen and (max-width: 600px) {
+  .project-container.active {
+    height: 100%;
+  }
+
+  .project-container.active .project-title {
+    margin-top: 0.5rem;
+  }
+
+  .project-container.active .project-img {
+    height: 70%;
+  }
+
+  .project-container.active .project-description,
+  .project-container.active .btn-container {
+    display: block;
+    opacity: 1;
+  }
+}
+
 
 .project-img {
   border-radius: 2rem;
@@ -620,6 +662,9 @@ article .icon {
     flex: 0 0 calc(100% - 20px);
   }
 }
+
+
+
 
 
 /* MEDIA */
@@ -678,6 +723,12 @@ article .icon {
   justify-content: center;
   gap: 0.5rem;
   margin: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .email-container {
+    padding-left: 10px;
+  }
 }
 
 .contact-info-container p {
