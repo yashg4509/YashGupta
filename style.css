@@ -407,31 +407,12 @@ article .icon {
   transition: opacity 0.5s ease; /* Smooth transition */
 }
 
-/* Add a media query to adjust styles for smaller screens if needed */
-@media screen and (max-width: 600px) {
-  .carousel {
-    flex-direction: column; /* Stack slides vertically on small screens */
-    overflow-x: hidden;
-    overflow-y: scroll; /* Enable vertical scrolling if needed */
-    white-space: normal; /* Allow text to wrap */
-  }
-
-  .slide {
-    flex: 0 0 100%;
-  }
-
-    /* Add additional padding for smaller screens */
-    .slide .card {
-      max-width: 90%;
-      /* padding-right: 10px; Adjust the padding as needed */
-    }
-
-}
 
 .slide.active {
   display: block;
   opacity: 1;
 }
+
 
 .dots {
   position: relative;
@@ -506,21 +487,55 @@ article .icon {
   margin-bottom: 10px;
 }
 
-/* .exp-skills {
-  color: black;
+/* ... (your existing styles) ... */
+
+.exp-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  /* background-color: white; */
+  border-radius: 50%;
   display: flex;
-  gap: 2rem;
-  margin-top: 15px;
-  font-size: small;
-  position:relative;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); */
+  transition: background-color 0.3s;
 }
 
-.exp-skills-title {
-  list-style-type: none;
-  gap: 0.5rem;
+/* .exp-arrow:hover {
+  background-color: #f0f0f0;
 } */
 
+.left {
+  left: 10px;
+}
 
+.right {
+  right: 10px;
+}
+
+/* Add a media query to adjust styles for smaller screens if needed */
+@media screen and (max-width: 600px) {
+  .carousel {
+    flex-direction: column; /* Stack slides vertically on small screens */
+    overflow-x: hidden;
+    overflow-y: scroll; /* Enable vertical scrolling if needed */
+    white-space: normal; /* Allow text to wrap */
+  }
+
+  .slide {
+    flex: 0 0 100%;
+  }
+
+    /* Add additional padding for smaller screens */
+    .slide .card {
+      max-width: 90%;
+    }
+
+}
 
 
 /* PROJECTS */
