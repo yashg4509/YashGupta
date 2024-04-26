@@ -127,6 +127,78 @@ const topArtistsData = {
 };
 
 
+const projectsData = [
+  {
+    title: "enRollBadge",
+    description: "EnRollBadge, a user-friendly web app for UW Madison students, streamlines class enrollment with real-time seat availability notifications. Developed with ReactJS and Tailwind CSS, the platform ensures an efficient and stress-free experience. With over 600 users, EnRollBadge provides timely updates, allowing students to focus effortlessly on their education.",
+    image: "./assets/enrollbadge.png",
+    url: "https://enrollbadge.com/",
+    github: "https://github.com/yashg4509/enRollBadge"
+  },
+  {
+    title: "DragonLearn",
+    description: "Recognized with the Best Accessibility Hack Award at Northwestern University's WildHacks, DragonLearn is a dynamic app aiding dyslexic individuals with personalized training through interactive games. The frontend, crafted with React.JS and Tailwind CSS, ensures a user-friendly experience. I worked on integrating machine learning models such as Naive Bayes classifier with ScikitLearn and integration through Flask for an impactful and engaging platform.",
+    image: "./assets/DragonLearnLogo.png",
+    url: "https://dashboard.wildhacks.net/project/#OUBC",
+    github: "https://github.com/yashg4509/DragonLearn"
+  },
+  {
+    title: "BuckyCourses",
+    description: "BuckyCourses is an LLM-powered course advisor that uses objective measures to recommend what courses students should take to fulfill requirements and achieve the most academic success; it was recognized as a top 4 project at CheeseHacks 2023. My contributions primarily include developing the large language model with LangChain and GPT-4 as well as scraping and processing thousands of data points on major requirements, average GPA of courses, and course information using Python and Selenium.",
+    image: "./assets/buckycourses.png",
+    github: "https://github.com/yashg4509/BuckyCourses"
+  },
+  {
+    title: "Layon",
+    description: "Layon, a ReactJS web app, displays interactive U.S. layoff statistics with a city breakdown as well as predicted layoff trends. My contributions primarily included backend algorithm development for data processing and leading the development of time series forecasting model. It was recognized as 4th place and Best Use of Google Cloud at MadData 2023.",
+    image: "./assets/layon.png",
+    url: "https://devpost.com/software/layon"
+  },
+  {
+    title: "Analyzing the Effectiveness of Novel Classification Techniques for Detecting Knee Cartilage Damage",
+    description: "Designed machine learning models to detect knee cartilage ruptures in knee cartilage MRI images early and counter osteoarthritis. Created dataset with Python algorithms that filter, preprocessed, and merged a combination of 1.2 million knee MRI images from different sources. Utilized Tensorflow (Python) to develop and deploy machine learning models on dataset. Developed precise accuracy metrics to compare effectiveness of different machine learning models to find the most optimal model using SciKit Learn. Recognized as 1st place in San Diego Greater Science and Engineering Fair and qualifier to California State Fair. First author on pending publication",
+    image: "./assets/knee.jpeg",
+    url: "https://drive.google.com/file/d/1ZiNSYXRMGdg6gt5SGVi1jZgwPPEB-GJT/view"
+  }, 
+  {
+    title: "Zone In",
+    description: "Zone In is a web application designed to simplify urban zoning through a multimodal tech stack combining AI-driven chatbots and advanced image generation. I created the chatbot using Langchain and the OpenAI API, designed the image model with DALL·E, and integrated them using a Python-based pipeline that preprocesses extensive zoning codes. I also led the frontend development in React JS, backend integration using Flask and Postman, and produced a demo video. Our project was ranked in the top 10 at the Northwestern Wild Hacks Hackathon among 174 participants.",
+    image: "./assets/zone-in.jpeg",
+    url: "https://devpost.com/software/zone-in-48zhr6",
+    github: "https://github.com/yashg4509/ZoneIn"
+  },
+  {
+    title: "Rekroot",
+    description: "Rekroot is an innovative job application platform that streamlines the search and application process through personalized automation. My role involved constructing a message generation model using LangChain and scraping job data using the Google Jobs API and Python. This integration enabled automated, personalized application emails that significantly increase the likelihood of securing interviews, tailored specifically to user profiles and job preferences. Our tool not only simplifies the application process but also enhances the job seeker's engagement with potential employers by directly connecting them with suitable opportunities.",
+    image: "./assets/rekroot.png",
+    url: "https://devpost.com/software/rekroot",
+    github: "https://github.com/yashg4509/Rekroot"
+  }  
+];
+
+function populateProjects() {
+  const container = document.getElementById('projects-container');
+  projectsData.forEach(project => {
+    const projectHTML = `
+      <div class="details-container color-container project-container" onclick="toggleProject(this)">
+        <div class="article-container">
+          <img src="${project.image}" alt="${project.title}" class="project-img">
+        </div>
+        <h2 class="skill-sub-title project-title">${project.title}</h2>
+        <p class="project-description">${project.description}</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="window.open('${project.url}', '_blank')">Check it out!</button>
+          ${project.github ? `<button class="btn btn-color-2 project-btn" onclick="window.open('${project.github}', '_blank')">Github</button>` : ''}
+        </div>
+      </div>
+    `;
+    container.innerHTML += projectHTML;
+  });
+}
+
+document.addEventListener('DOMContentLoaded', populateProjects);
+
+
 
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
