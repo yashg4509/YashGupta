@@ -72,8 +72,68 @@ a:hover {
   text-decoration: none;
 }
 
+#top-artists-section {
+  background: #fff; /* White background for the box */
+  border-radius: 20px; /* Rounded corners for the box */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 40px; /* Ample padding around the content */
+  margin: 40px auto; /* Center the box with automatic horizontal margins */
+  max-width: 800px; /* Maximum width of the box to avoid it stretching too wide */
+  text-align: center; /* Center align the content */
+}
 
+.top-artists-box {
+  margin-top: 20px; /* Additional top margin for inner content */
+}
 
+.top-artists-title {
+  font-size: 2rem; /* Larger font size for the title */
+  font-weight: 600; /* Make the title font a bit heavier */
+  margin-bottom: 20px; /* Space below the title */
+  color: #333; /* Dark grey color for better readability */
+}
+
+.powered-by {
+  font-size: 0.8rem; /* Smaller font size for the 'powered by' text */
+  margin-bottom: 30px; /* Space below the 'powered by' text */
+}
+
+.spotify {
+  color: #1DB954; /* Spotify brand color */
+  font-weight: 700; /* Make the Spotify text bolder */
+}
+
+#top-artists-container {
+  display: flex;
+  justify-content: space-evenly; /* Even spacing between the artist divs */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  gap: 20px; /* Space between the artist divs */
+}
+
+.artist {
+  flex-basis: calc(33.333% - 20px); /* Three items per row minus the gap */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align the artist image and name */
+}
+
+.artist a {
+  display: block; /* Ensure the link takes up the full space of its content */
+}
+
+.artist-image {
+  width: 120px; /* Smaller image size */
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px; /* Space below the image */
+}
+
+.artist-name {
+  font-weight: bold; /* Bold artist name */
+  color: #333; /* Dark grey color for artist name */
+  font-size: 1rem; /* Readable font size for artist name */
+}
 
 /* MOBILE MENU */
 #hamburger-nav {
