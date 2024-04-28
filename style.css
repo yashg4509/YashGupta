@@ -619,33 +619,31 @@ article .icon {
   justify-content: center; /* Center the projects */
 }
 
+/* PROJECTS */
 .project-container {
-  overflow: hidden;
-  height: 400px; /* Adjusted height to prevent cutoff */
-  transition: height 0.3s ease-in-out;
-  flex: 0 0 calc(33.333% - 20px); /* 3 items per row with 20px gap */
+  flex: 0 0 calc(33.333% - 20px); /* Adjust for three items per row, considering 20px as gap */
   margin: 10px;
   box-sizing: border-box;
+  transition: height 0.3s ease-in-out; /* Smooth transition for expanding effect */
 }
 
-
-/* Make project containers responsive for smaller screens */
+/* Responsive adjustments for smaller screens */
 @media screen and (max-width: 1200px) {
   .project-container {
-    flex: 0 0 calc(50% - 20px);
+    flex: 0 0 calc(50% - 20px); /* Two items per row */
   }
 }
 
 @media screen and (max-width: 600px) {
   .project-container {
-    flex: 0 0 calc(100% - 20px);
+    flex: 0 0 calc(100% - 20px); /* One item per row */
   }
 }
 
-/* Make Knee project wider */
+/* Make Knee project wider
 .project-container:nth-child(5) {
   flex: 0 0 calc(66.666% - 20px); /* 2 items per row with 20px gap */
-}
+} */
 
 .project-container:hover {
   height: 100%; /* Adjust the height as needed for the expanded state */
