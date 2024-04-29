@@ -129,6 +129,26 @@ const topArtistsData = {
 
 const projectsData = [
   {
+    title: "Zone In",
+    description: "Zone In is a web application designed to simplify urban zoning through a multimodal tech stack combining AI-driven chatbots and advanced image generation. I created the chatbot using Langchain and the OpenAI API, designed the image model with DALL·E, and integrated them using a Python-based pipeline that preprocesses extensive zoning codes. I also led the frontend development in React JS, backend integration using Flask and Postman, and produced a demo video. Our project was ranked in the top 10 at the Northwestern Wild Hacks Hackathon among 174 participants.",
+    image: "./assets/zone-in.jpeg",
+    url: "https://devpost.com/software/zone-in-48zhr6",
+    github: "https://github.com/yashg4509/ZoneIn"
+  },
+  {
+    title: "Rekroot",
+    description: "Rekroot is an innovative job application platform that streamlines the search and application process through personalized automation. My role involved constructing a message generation model using LangChain and scraping job data using the Google Jobs API and Python. This integration enabled automated, personalized application emails that significantly increase the likelihood of securing interviews, tailored specifically to user profiles and job preferences. Our tool not only simplifies the application process but also enhances the job seeker's engagement with potential employers by directly connecting them with suitable opportunities.",
+    image: "./assets/rekroot.png",
+    url: "https://devpost.com/software/rekroot",
+    github: "https://github.com/yashg4509/Rekroot"
+  },
+  {
+    title: "BuckyCourses",
+    description: "BuckyCourses is an LLM-powered course advisor that uses objective measures to recommend what courses students should take to fulfill requirements and achieve the most academic success; it was recognized as a top 4 project at CheeseHacks 2023. My contributions primarily include developing the large language model with LangChain and GPT-4 as well as scraping and processing thousands of data points on major requirements, average GPA of courses, and course information using Python and Selenium.",
+    image: "./assets/buckycourses.png",
+    github: "https://github.com/yashg4509/BuckyCourses"
+  },
+  {
     title: "enRollBadge",
     description: "EnRollBadge, a user-friendly web app for UW Madison students, streamlines class enrollment with real-time seat availability notifications. Developed with ReactJS and Tailwind CSS, the platform ensures an efficient and stress-free experience. With over 600 users, EnRollBadge provides timely updates, allowing students to focus effortlessly on their education.",
     image: "./assets/enrollbadge.png",
@@ -143,12 +163,6 @@ const projectsData = [
     github: "https://github.com/yashg4509/DragonLearn"
   },
   {
-    title: "BuckyCourses",
-    description: "BuckyCourses is an LLM-powered course advisor that uses objective measures to recommend what courses students should take to fulfill requirements and achieve the most academic success; it was recognized as a top 4 project at CheeseHacks 2023. My contributions primarily include developing the large language model with LangChain and GPT-4 as well as scraping and processing thousands of data points on major requirements, average GPA of courses, and course information using Python and Selenium.",
-    image: "./assets/buckycourses.png",
-    github: "https://github.com/yashg4509/BuckyCourses"
-  },
-  {
     title: "Layon",
     description: "Layon, a ReactJS web app, displays interactive U.S. layoff statistics with a city breakdown as well as predicted layoff trends. My contributions primarily included backend algorithm development for data processing and leading the development of time series forecasting model. It was recognized as 4th place and Best Use of Google Cloud at MadData 2023.",
     image: "./assets/layon.png",
@@ -160,20 +174,6 @@ const projectsData = [
     image: "./assets/knee.jpeg",
     url: "https://drive.google.com/file/d/1ZiNSYXRMGdg6gt5SGVi1jZgwPPEB-GJT/view"
   }, 
-  {
-    title: "Zone In",
-    description: "Zone In is a web application designed to simplify urban zoning through a multimodal tech stack combining AI-driven chatbots and advanced image generation. I created the chatbot using Langchain and the OpenAI API, designed the image model with DALL·E, and integrated them using a Python-based pipeline that preprocesses extensive zoning codes. I also led the frontend development in React JS, backend integration using Flask and Postman, and produced a demo video. Our project was ranked in the top 10 at the Northwestern Wild Hacks Hackathon among 174 participants.",
-    image: "./assets/zone-in.jpeg",
-    url: "https://devpost.com/software/zone-in-48zhr6",
-    github: "https://github.com/yashg4509/ZoneIn"
-  },
-  {
-    title: "Rekroot",
-    description: "Rekroot is an innovative job application platform that streamlines the search and application process through personalized automation. My role involved constructing a message generation model using LangChain and scraping job data using the Google Jobs API and Python. This integration enabled automated, personalized application emails that significantly increase the likelihood of securing interviews, tailored specifically to user profiles and job preferences. Our tool not only simplifies the application process but also enhances the job seeker's engagement with potential employers by directly connecting them with suitable opportunities.",
-    image: "./assets/rekroot.png",
-    url: "https://devpost.com/software/rekroot",
-    github: "https://github.com/yashg4509/Rekroot"
-  }  
 ];
 
 function populateProjects() {
