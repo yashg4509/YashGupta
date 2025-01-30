@@ -1,102 +1,33 @@
 const topArtistsData = {
-  "href": "https://api.spotify.com/v1/me/top/artists?limit=3&time_range=medium_term&locale=en-US,en;q%3D0.9",
-  "limit": 3,
-  "next": "https://api.spotify.com/v1/me/top/artists?offset=3&limit=3&time_range=medium_term&locale=en-US,en;q%3D0.9",
-  "offset": 0,
-  "previous": null,
-  "total": 197,
   "items": [
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
-      },
-      "followers": {
-        "href": null,
-        "total": 90637129
-      },
-      "genres": ["canadian hip hop", "canadian pop", "hip hop", "pop rap", "rap"],
-      "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
-      "id": "3TVXtAsR1Inumwj472S9r4",
-      "images": [
-        {
-          "url": "https://i.scdn.co/image/ab6761610000e5eb4293385d324db8558179afd9",
-          "height": 640,
-          "width": 640
-        },
-        {
-          "url": "https://i.scdn.co/image/ab676161000051744293385d324db8558179afd9",
-          "height": 320,
-          "width": 320
-        },
-        {
-          "url": "https://i.scdn.co/image/ab6761610000f1784293385d324db8558179afd9",
-          "height": 160,
-          "width": 160
-        }
-      ],
-      "name": "Drake",
-      "popularity": 95,
-      "type": "artist",
-      "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
-      },
-      "followers": {
-        "href": null,
-        "total": 18055158
-      },
-      "genres": ["atl hip hop", "hip hop", "rap", "southern hip hop", "trap"],
-      "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
-      "id": "1RyvyyTE3xzB2ZywiAwp0i",
-      "images": [
-        {
-          "url": "https://i.scdn.co/image/ab6761610000e5eb6ef89e23678018c6d8630825",
-          "height": 640,
-          "width": 640
-        },
-        {
-          "url": "https://i.scdn.co/image/ab676161000051746ef89e23678018c6d8630825",
-          "height": 320,
-          "width": 320
-        },
-        {
-          "url": "https://i.scdn.co/image/ab6761610000f1786ef89e23678018c6d8630825",
-          "height": 160,
-          "width": 160
-        }
-      ],
-      "name": "Future",
-      "popularity": 91,
-      "type": "artist",
-      "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
-    },
     {
       "external_urls": {
         "spotify": "https://open.spotify.com/artist/4Ga1P7PMIsmqEZqhYZQgDo"
       },
       "followers": {
         "href": null,
-        "total": 7642033
+        "total": 8590449
       },
-      "genres": ["melodic rap", "pluggnb", "rap"],
+      "genres": [
+        "melodic rap",
+        "rap"
+      ],
       "href": "https://api.spotify.com/v1/artists/4Ga1P7PMIsmqEZqhYZQgDo",
       "id": "4Ga1P7PMIsmqEZqhYZQgDo",
       "images": [
         {
-          "url": "https://i.scdn.co/image/ab6761610000e5ebeeba43c460454fcababda14f",
           "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebeeba43c460454fcababda14f",
           "width": 640
         },
         {
-          "url": "https://i.scdn.co/image/ab67616100005174eeba43c460454fcababda14f",
           "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174eeba43c460454fcababda14f",
           "width": 320
         },
         {
-          "url": "https://i.scdn.co/image/ab6761610000f178eeba43c460454fcababda14f",
           "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178eeba43c460454fcababda14f",
           "width": 160
         }
       ],
@@ -104,11 +35,94 @@ const topArtistsData = {
       "popularity": 80,
       "type": "artist",
       "uri": "spotify:artist:4Ga1P7PMIsmqEZqhYZQgDo"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+      },
+      "followers": {
+        "href": null,
+        "total": 95655845
+      },
+      "genres": [
+        "rap",
+        "hip hop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+      "id": "3TVXtAsR1Inumwj472S9r4",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb4293385d324db8558179afd9",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab676161000051744293385d324db8558179afd9",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f1784293385d324db8558179afd9",
+          "width": 160
+        }
+      ],
+      "name": "Drake",
+      "popularity": 94,
+      "type": "artist",
+      "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/2hlmm7s2ICUX0LVIhVFlZQ"
+      },
+      "followers": {
+        "href": null,
+        "total": 8866562
+      },
+      "genres": [
+        "melodic rap"
+      ],
+      "href": "https://api.spotify.com/v1/artists/2hlmm7s2ICUX0LVIhVFlZQ",
+      "id": "2hlmm7s2ICUX0LVIhVFlZQ",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebb978b95b8e03351df8e103af",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174b978b95b8e03351df8e103af",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178b978b95b8e03351df8e103af",
+          "width": 160
+        }
+      ],
+      "name": "Gunna",
+      "popularity": 85,
+      "type": "artist",
+      "uri": "spotify:artist:2hlmm7s2ICUX0LVIhVFlZQ"
     }
-  ]
+  ],
+  "total": 170,
+  "limit": 3,
+  "offset": 0,
+  "href": "https://api.spotify.com/v1/me/top/artists?limit=3&time_range=medium_term&locale=en-US,en;q%3D0.9",
+  "next": "https://api.spotify.com/v1/me/top/artists?offset=3&limit=3&time_range=medium_term&locale=en-US,en;q%3D0.9",
+  "previous": null
 };
 
 const projectsData = [
+  {
+    title: "trckr",
+    description: "trckr automates job application tracking by scanning your inbox for application emails and extracting key details. Using CrewAI LLM agents, it eliminates the need for manual searches, providing a centralized dashboard to track your progress. Optimized for efficiency, it ensures inactive users don’t consume unnecessary resources.",
+    image: "./assets/trckr.png",
+    url: "https://www.youtube.com/watch?v=5_zUIMTUdAY"
+  },
   {
     title: "Zone In",
     description: "Zone In is a web application designed to simplify urban zoning through a multimodal tech stack combining AI-driven chatbots and advanced image generation. I created the chatbot using Langchain and the OpenAI API, designed the image model with DALL·E, and integrated them using a Python-based pipeline that preprocesses extensive zoning codes. I also led the frontend development in React JS, backend integration using Flask and Postman, and produced a demo video. Our project was ranked in the top 10 at the Northwestern Wild Hacks Hackathon among 174 participants.",
@@ -154,7 +168,8 @@ const projectsData = [
     description: "Designed machine learning models to detect knee cartilage ruptures in knee cartilage MRI images early and counter osteoarthritis. Created dataset with Python algorithms that filter, preprocessed, and merged a combination of 1.2 million knee MRI images from different sources. Utilized Tensorflow (Python) to develop and deploy machine learning models on dataset. Developed precise accuracy metrics to compare effectiveness of different machine learning models to find the most optimal model using SciKit Learn. Recognized as 1st place in San Diego Greater Science and Engineering Fair and qualifier to California State Fair. First author on pending publication",
     image: "./assets/knee.jpeg",
     url: "https://drive.google.com/file/d/1ZiNSYXRMGdg6gt5SGVi1jZgwPPEB-GJT/view"
-  }, 
+  }
+
 ];
 
 function populateProjects() {
